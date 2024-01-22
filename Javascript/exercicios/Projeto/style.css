@@ -1,0 +1,21 @@
+body{
+    background-color: black;
+}
+h1{
+    color: yellow;
+}
+input{
+    width: 150px;
+}
+.btn{
+    background-color: blueviolet;
+    width: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+}
+div#res{
+    margin-top: 20px;
+    color: white;
+}

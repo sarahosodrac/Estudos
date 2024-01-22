@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Tabelas</title>
+    <style>
+        table{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        caption{
+            border: 1px solid black;
+            padding: 10px;
+        }
+       th, td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        tbody > tr:nth-child(2n-1){
+            background-color: rgb(181, 179, 179);
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+            Trabalhando com Tabelas - Mesclagem de Células
+        </h1>
+    </header>
+    <table>
+        <caption>
+            Minhas comidas Favoritas
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col">
+                    Salgados
+                </th>
+                <th scope="col">
+                    Doces
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3"> Pizza </td>
+                <td colspan="2"> Mousse de Maracujá </td>
+            </tr>
+            <tr>    
+                
+                <td> Açaí </td>
+                <td rowspan="2">Chá Gelado</td>
+            </tr>
+            <tr>
+               
+                <td>Sorvete de Flocos</td>
+               
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total de Comidas</th>
+                <td> 006 </td>
+            </tr>
+        </tfoot>
+    </table>
+    
+</body>
+</html>

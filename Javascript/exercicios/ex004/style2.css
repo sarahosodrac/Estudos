@@ -1,0 +1,16 @@
+body{
+    background-color: blueviolet;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+}
+input{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100px;
+}
+div#res{
+    margin-top: 20px;
+}
+input#diferente{
+    background-color: yellow;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}

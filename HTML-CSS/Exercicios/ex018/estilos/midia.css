@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+@media print{
+
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+    body{
+        background: url(../imagens/back-print.jpg);/* Desnecessario n imprimi background*/
+    }
+    main h1{
+        text-shadow: none;
+        color: black;
+    }
+    main{
+        border: 2px solid black;
+    }
+    img#cel{
+        display: none;
+    }
+    img#tablet{
+        display: none;
+    }
+    img#pc{
+        display: none;
+    }
+    img#impressora{
+        display: block;
+    }
+    img#tv{
+        display: none;
+    }
+        
+}
+@media screen and (min-width:768px) and (max-width:992px){
+   body{
+    background: url(../imagens/back-tablet.jpg);
+   }
+img#cel{
+    display: none;
+}
+img#tablet{
+    display: block;
+}
+img#pc{
+    display: none;
+}
+img#impressora{
+    display: none;
+}
+img#tv{
+    display: none;
+}
+    
+}
+@media screen and (min-width:992px) and (max-width:1200px){
+    body{
+        background: url(../imagens/back-pc.jpg);
+       }
+    img#cel{
+        display: none;
+    }
+    img#tablet{
+        display: none;
+    }
+    img#pc{
+        display: block;
+    }
+    img#impressora{
+        display: none;
+    }
+    img#tv{
+        display: none;
+    }
+    
+}
+@media screen and (min-width:1200px){
+    body{
+        background: url(../imagens/back-tv.jpg);
+       }
+    img#cel{
+        display: none;
+    }
+    img#tablet{
+        display: none;
+    }
+    img#pc{
+        display: none;
+    }
+    img#impressora{
+        display: none;
+    }
+    img#tv{
+        display: block;
+    }
+    
+}

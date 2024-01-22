@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Trabalhando com formulários</h1>
+        </header>
+        <form action="cadastro.php">
+            <p>
+                <label for="num1">Número 1:</label>
+                <input type="number" name="num1" id="num1" required oninput="soma.innerHTML = Number(num1.value) + Number(num2.value)">
+            </p>
+            <p>
+                <label for="num2">Número 2:</label>
+                <input type="number" name="num2" id="num2" required oninput="soma.innerHTML = Number(num1.value) + Number(num2.value)">
+            </p>
+            <label for="nivel">Nível</label>
+            <input type="range" name="nivel" id="nivel" min="0" max="10" value="5" oninput="nv.innerHTML= Number(nivel.value)">
+            <output id="nv">5</output>
+            <p>
+                <label for="soma">Soma:</label>
+                <output name="soma" id="soma">0</output>
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+            
+        </form>
+    </main>

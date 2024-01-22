@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <input type="number" name="caixa1" id="caixa1">
+    <input type="number" name="caixa2" id="caixa2">
+    <input class="btn" type="button" value="+" onclick="somar()">
+    <input class="btn" type="button" value="-" onclick="diminuir()">
+    <input class="btn" type="button" value="x" onclick="multiplicar()">
+    <input class="btn" type="button" value="/" onclick="dividir()">
+    <div id="res">
+        Resposta: 
+    </div>
+    <script>
+        function somar(){
+        var txtcaixa1 = window.document.getElementById('caixa1')
+        var txtcaixa2 = window.document.getElementById('caixa2')
+        //var resultado = window.document.getElementById('res')
+        var numero1 = Number(txtcaixa1.value)
+        var numero2 = Number(txtcaixa2.value)
+        resposta = numero1 + numero2
+        res.innerHTML = `A soma entre ${numero1} e ${numero2} é igual á ${resposta}`
+        }
+        function diminuir(){
+        var txtcaixa1 = window.document.getElementById('caixa1')
+        var txtcaixa2 = window.document.getElementById('caixa2')
+       // var resultado = window.document.getElementById('res')
+        var numero1 = Number(txtcaixa1.value)
+        var numero2 = Number(txtcaixa2.value)
+        resposta = numero1 - numero2
+        res.innerHTML = `A soma entre ${numero1} e ${numero2} é igual á ${resposta}`
+        }
+        function multiplicar()
+        {
+            var txtcaixa1 = window.document.getElementById('caixa1')
+            var txtcaixa2 = window.document.getElementById('caixa2')
+            //var resultado = window.document.getElementById('res') DISPENSAVEL
+            var numero1 = Number(txtcaixa1.value)
+            var numero2 = Number(txtcaixa2.value)
+            resposta = numero1 * numero2
+            res.innerHTML = `A soma entre ${numero1} e ${numero2} é igual á ${resposta}`
+
+        }
+        function dividir()
+        {
+            var txtcaixa1 = window.document.getElementById('caixa1')
+            var txtcaixa2 = window.document.getElementById('caixa2')
+            var resultado = window.document.getElementById('res') 
+            var numero1 = Number(txtcaixa1.value)
+            var numero2 = Number(txtcaixa2.value)
+            resposta = numero1 / numero2
+            res.innerHTML = `A soma entre ${numero1} e ${numero2} é igual á ${resposta}`
+
+        }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Teste de formulários</h1>
+        </header>
+        <section>
+            <form action="cadastro.php" method="get" autocomplete="on">
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                <p>
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" required placeholder="Nome Completo" autocomplete="name">
+                </p>
+                <p>
+                    <label for="senha">Senha: </label>
+                    <input type="password" name="senha" id="senha" required minlength="8" placeholder="Senha">
+                </p>
+                <p>
+                    <label for="media">Média:</label>
+                    <input type="number" name="media" id="media" min="0" max="10" step="0.5" placeholder="0 á 10">
+                </p>
+                <p>
+                    <label for="periodo">Período Letivo</label>
+                    <input type="month" name="periodo" id="periodo">
+                </p>
+                <label for="data">Data:</label>
+                <input type="date" name="data" id="data">
+                <p>
+                </fieldset>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </p>
+               
+
+
+            </form>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site 1</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="midia.css">
+</head>
+<body onresize="mudouTamanho()">
+
+    <header>
+        <h1>
+            Meu Site
+        </h1>
+        <span id="burguer" class="material-symbols-outlined" onclick="abrir()">menu</span>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Teste</a></li>
+                <li><a href="#">Teste</a></li>
+                <li><a href="#">Teste</a></li>
+                <li><a href="#">Teste</a></li>
+                <li><a href="#">Teste</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Texto de Teste</h2>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis magni iusto totam amet illum ex! Magni repellendus officiis possimus accusantium tempora, molestiae dolorum, quia laudantium omnis architecto modi! Vel, nemo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis explicabo rerum fugiat, corporis exercitationem hic quasi minus porro, ducimus itaque maiores molestiae impedit asperiores officia repellat quidem deleniti nisi. Enim. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, consequatur, non reprehenderit iusto quod nobis veniam molestias id aliquid ullam exercitationem laborum cumque, fuga similique alias voluptates eum quidem dignissimos? Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium magnam quaerat impedit doloribus necessitatibus minus saepe nam quasi accusantium cumque distinctio a enim, veniam eum voluptates iure fuga eius ducimus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim error doloribus beatae eveniet quas! Nobis numquam quod beatae sunt? Nostrum quibusdam, perferendis consectetur sint nulla fugiat voluptas alias laudantium ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis omnis eligendi obcaecati facilis aperiam blanditiis natus quos non nobis animi! Rem autem ipsum quisquam cupiditate, voluptate perspiciatis possimus. Quidem, voluptates.
+            </p>
+        </article>
+    </main>
+    <footer>
+        <p>&copy; Site Desenvolvido por Sarah Cardoso</p>
+    </footer>
+    <script>
+
+        function abrir(){
+            if(itens.style.display == 'block'){
+                itens.style.display = 'none'
+            }
+            else{
+                itens.style.display = 'block'
+            }
+            function mudouTamanho(){
+            if(window.innerWidth>=768){
+                itens.style.display = 'block'
+            }
+            else{
+                itens.style.display = 'none'
+            }
+            }
+        }
+    </script>
+</body>
+</html>

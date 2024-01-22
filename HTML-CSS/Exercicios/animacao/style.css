@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+@keyframes animacao{
+
+    0%{background-color:blueviolet;
+        transform: translateX(0);
+    }
+    
+    100%{background-color: red;
+    
+        transform: translateX(calc(100vw - 200px ));
+    }
+ 
+     
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.conteiner{
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+    animation-name: animacao; 
+    animation-duration: 6s;
+    animation-delay: 1s; 
+    animation-iteration-count: 3;
+}

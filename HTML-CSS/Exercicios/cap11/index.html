@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Imagens Dinâmicas</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Tente abrir esse site em dispositivos diferentes</p>
+
+     <picture>
+        <source media="(max-width:750px )" srcset="imagens/imagem300x300.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/imagem700x700.png" type="image/png">
+        <img src="imagens/imagem1000x1000.png" alt="imagem grande">
+     </picture>
+     <h1>Reproduzinho Áudio</h1>
+     <p>Estou testando reprodução de audio</p>
+     <audio preload="metadata" controls loop> 
+        <source src="midia/audio.mp3" type="audio/mpeg">
+        <p>Infelizmente seu navegador não permite a reprodução, se quiser fazer o download <a href="midia/audio.mp3">clique aqui</a></p>
+     </audio> 
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Trabalhando com Dom</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong> DOM </strong> em JavaScript</p>
+    <div id="msg">
+        clique aqui
+    </div>
+    <script>
+        window.document.writeln('olá, mundo!')
+        var p1 = window.document.getElementsByTagName('p')[1]
+        window.document.writeln('Está escrito assim: ' + p1.innerHTML)
+        var d = window.document.getElementById('msg')
+        d.style.background = 'gray'
+        window.document.getElementById('msg').innerText = 'Olá'
+    </script>
+</body>
+</html>

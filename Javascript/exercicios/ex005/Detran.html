@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN</title>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+    <h4>Velocidade do Carro: <input type="number" name="texto_velocidade" id="texto_velocidade"> Km/h</h4>
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="resultado"></div>
+
+    <script>
+        function calcular()
+        {
+            var txt_velocidade = window.document.getElementById('texto_velocidade')
+            var resultado = window.document.getElementById('resultado')
+            var velocidade = Number(txt_velocidade.value)
+            resultado.innerHTML = `Sua Velocidade atual é de <strong>${velocidade} Km/h</strong>`
+            if(velocidade>60){
+                resultado.innerHTML+= `<p>Sua velocidade está acima do permitido. Multado!</p>`
+            }
+            else{
+                resultado.innerHTML +=`<p>Tudo certo!</p>`
+            }
+            resultado.innerHTML += `<p>Dirija sempre com cinto de segurança!</p>`/* o mais está ali concatenando se n ele puxa apenas o último inner, com a concatenção puxa os dois*/
+
+        }
+    </script>
+
+</body>
+</html>

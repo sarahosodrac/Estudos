@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Trabalhando com formulários</h1>
+        </header>
+        <form action="cadastro.php" method="post">
+            <fieldset>
+                <legend>Gênero</legend>
+                <label for="fem">Feminino</label>
+                <input type="radio" name="sexo" id="fem">
+                <label for="masc">Masculino</label>
+                <input type="radio" name="sexo" id="masc" checked>
+            </fieldset>
+            <fieldset>
+            <legend>Esportes</legend>
+            <label for="futebol">Futebol</label>
+            <input type="checkbox" name="futebol" id="futebol">
+            <br>
+            <label for="volei">Vôlei</label>
+            <input type="checkbox" name="volei" id="volei">
+        </fieldset>
+        <fieldset>
+            <legend>Cores</legend>
+            <input type="color" name="cor" id="cor">
+        </fieldset>
+        <fieldset>
+            <legend>Nível de Satisfação</legend>
+            <label for="nivel">Pouco Satisfeito</label>
+            <input type="range" name="nivel" id="nivel" min="1" max="5">
+            <label for="nivel">Muito Satisfeito</label>
+        </fieldset>
+        <fieldset>
+            <legend>Seleção</legend>
+            <select name="estado" id="estado">
+                <option value="selecione" selected>Selecione</option>
+                <optgroup label="Região-Suldeste">
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="MG">Minas Gerais</option>
+                </optgroup>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Profissões</legend>
+            <input type="text" name="prof" id="prof" list="lsprof">
+            <datalist id="lsprof">
+                <option >Médico</option>
+                <option >Desenvolvedor</option>
+                <option >Administrador</option>
+            </datalist>
+            <br>
+        </fieldset>
+        <p>
+            <label for="msg">Mensagem:</label>
+            <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+        </p>
+        <p><input type="file" name="foto" id="foto"></p>
+        <input type="submit" value="Enviar">
+
+        </form>
+
+    </main>
+</body>
+</html>
